@@ -15,6 +15,10 @@
 						<label for="" class="control-label">Nama </label>
 						<input type="text" name="nama_produk" class="form-control">
 					</div>
+					<div class="form-group">
+						<label for="" class="control-label">Foto</label>
+						<input type="file" name="foto" class="form-control" accept=".png">
+					</div>
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">

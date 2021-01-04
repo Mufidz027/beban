@@ -9,7 +9,7 @@ class ProdukController extends Controller
 {
 	function index(){
 		$user = request()->user();
-		$data['list_produk'] = $user->produk;
+		$data['list_produk'] = Produk::all();
 		$data['list_kategori'] = Kategori::all();
 		return view('admin.produk.index', $data);
 	}
@@ -23,6 +23,7 @@ class ProdukController extends Controller
 		$produk-> id_user = request()->user()->id;
 		$produk-> id_kategori = request('id_kategori');
 		$produk-> nama_produk = request('nama_produk');
+		$produk-> foto = request('foto');
 		$produk-> harga = request('harga');
 		$produk-> berat = request('berat');
 		$produk-> deskripsi = request('deskripsi');
@@ -46,6 +47,7 @@ class ProdukController extends Controller
 	function update(Produk $produk){
 		$produk->nama_produk = request('nama_produk');
 		$produk->id_kategori = request('id_kategori');
+		$produk->foto = request('foto');
 		$produk->harga = request('harga');
 		$produk->berat = request('berat');
 		$produk->deskripsi = request('deskripsi');

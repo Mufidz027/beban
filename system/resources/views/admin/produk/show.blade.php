@@ -19,15 +19,18 @@
 							<p>
 							<div class="form-group">
 							<label for="" class="control-label">Harga</label>
-							<h5>Rp.{{number_format($produk->harga)}}</h5>
+							<h5>{{$produk->harga}}</h5>
 							</div>
 							Stok : {{$produk->stok}} |
-							Berat : {{$produk->berat}} |
-							Seller : {{$produk->seller->nama}}
+							Berat : {{$produk->berat}} kg|
+							<!-- Seller : {{$produk->seller->username}} |  --> 
+							tanggal prodak : {{$produk->created_at->diffForHumans()}}
 							</p>
 							<p>
 								{!! nl2br($produk->deskripsi) !!}
 							</p>
+							<p>
+								<img src="{{$produk->foto}}" alt="">
 						</tbody>
 					</table>
 				</div>
