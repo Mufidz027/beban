@@ -7,8 +7,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <title>TOKOMUFIDZ</title>
-
+  
+@stack('style')
+ 
   @include('admin.template.section.link')
+  
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">

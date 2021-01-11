@@ -20,6 +20,7 @@ use App\Http\Controllers\KategoriController;
 */
 
 Route::prefix('admin')->group(function(){
+			Route::get('beranda', [HomeController::class, 'showBeranda']);
 			Route::post('produk/filter', [ProdukController::class, 'filter']);
 			Route::resource('produk', ProdukController::class);
 			Route::resource('user', UserController::class);

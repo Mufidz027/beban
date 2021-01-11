@@ -13,6 +13,8 @@
 
 <!-- AdminLTE App -->
 <script src="{{ url('public/dist/js/adminlte.min.js') }}"></script>
+@stack('script')
 <script>
 	$(".table-datatable").DataTable();
+	 </script>
 </script>
