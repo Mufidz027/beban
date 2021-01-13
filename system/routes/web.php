@@ -57,3 +57,5 @@ Route::get('logout', function () {
     return view('admin.login');
 });
 
+Route::get('test-Collection', [HomeController::class, 'testCollection']);
+

@@ -6,7 +6,7 @@
 		</div>
 		Stok : {{$produk->stok}} |
 		Berat : {{$produk->berat}} kg|
-		Seller : {{$produk->seller->username}} |  
+		Seller : {{$produk->seller->nama}} |  
 		tanggal prodak : {{$produk->created_at->diffForHumans()}}
 	</p>
 	

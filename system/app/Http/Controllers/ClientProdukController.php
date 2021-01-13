@@ -7,12 +7,12 @@ use App\Models\User;
 class ClientProdukController extends Controller
 {
 	function index(){
-		$data['list_produk'] = produk::all();
+		$data['list_produk'] = Produk::paginate(12);
 		return view('customer.home', $data);
 	}
 
 	function showProduk(){
-		$data['show_produk'] = produk::all();
+		$data['list_produk'] = Produk::all();
 		return view('customer.produk', $data);
 	}
 

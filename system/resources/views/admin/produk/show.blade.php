@@ -16,22 +16,22 @@
 							<h3>{{$produk->nama_produk}}</h3>
 							</div>
 							
-								<p>
-									<!-- <div class="form-group">
-	<	label for="" class="control-label">Harga</label>
+									<p>
+										<!-- <div class="form-group">
+									<	label for="" class="control-label">Harga</label>
 		<h5> -->
-									{{$produk->harga}}<!-- </h5> -->
-									</div>
-									Stok : {{$produk->stok}} |
-									Berat : {{$produk->berat}} kg|
-									Seller : {{$produk->seller->username}} |  
-									tanggal prodak : {{$produk->created_at->diffForHumans()}}
-								</p>
+										{{$produk->harga}}<!-- </h5> -->
+										</div>
+										Stok : {{$produk->stok}} |
+										Berat : {{$produk->berat}} kg|
+										Seller : {{$produk->seller->nama}} |  
+										tanggal prodak : {{$produk->created_at->diffForHumans()}}
+									</p>
 							<p>
 								{!! nl2br($produk->deskripsi) !!}
 							</p>
 							<p>
-								<img style="width:100%" src="{{url("public/$produk->foto")}}" >
+								<img style="width:40%" src="{{url("public/$produk->foto")}}" >
 							</p>
 						</tbody>
 					</table>

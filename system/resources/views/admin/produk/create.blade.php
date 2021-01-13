@@ -40,12 +40,12 @@
 						</div>
 					
 
-					<div class="col-md-3">
+					<!-- <div class="col-md-3">
 							<div class="form-group">
 								<label for="" class="control-label">username</label>
 								<input type="text" name="username" class="form-control">
 							</div>
-					</div>
+					</div> -->
 					</div>
 
 					<div class="form-group">
