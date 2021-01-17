@@ -57,5 +57,8 @@ Route::get('logout', function () {
     return view('admin.login');
 });
 
-Route::get('test-Collection', [HomeController::class, 'testCollection']);
+Route::get('test-Collection', [HomeController:: class, 'testCollection']);
+
+// wilayah - ajax
+Route::get('test-ajax', [HomeController:: class, 'testAjax']);
 
