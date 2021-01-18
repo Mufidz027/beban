@@ -17,7 +17,7 @@
             </div>
           </a>
 
-          <a href="#" class="dropdown-item">
+          <a href="{{url('setting')}}" class="dropdown-item">
             <i class="fa fa-cog"></i>Setting
             <div class="media">
             </div>

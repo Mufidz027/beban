@@ -21,10 +21,14 @@ function checkrouteactive($route){
           <img src="{{ url('public/dist/img/user2-160x160.jpg')}}"class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="{{url('admin/beranda')}}" class="d-block">
-            @if(Auth::check())
-              {{request()->user()->nama}}
-            @else
+          <a href="#" class="d-block">
+                            @if(Auth::check())
+                             {{request()->user()->nama}}
+                            @elseif(Auth::guard('Admin')->check())
+                            {{Auth::guard('Admin')->user()-nama}}
+                            @elseif(Auth::guard('pengguna')->check())
+                            {{Auth::guard('pengguna')->user()-nama}}
+                             @else
               Silahkan Login
             @endif
           </a>

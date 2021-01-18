@@ -46,6 +46,12 @@
               <span class="fas fa-lock"></span>
             </div>
           </div>
+          <div class="input-group mb-3">
+            <select name="login_as" class="form-control">
+              <option value="1">Admin</option>
+              <option value="0">Pengguna</option>
+              </select>
+          </div>
         </div>
         <div class="row">
           <div class="col-8">
